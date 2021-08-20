@@ -1,0 +1,63 @@
+====================================
+===== Exercício de Fixação API =====
+====================================
+
+
+1° O que é API?
+    R: Resumidamente, é um sistema ou serviço que fica rodando num servidor ouvindo uma porta, e através dele pode ser feito comunicação de informações. Essa comunicação é feita através de URIs ou endpoints.
+
+2° O que significa API REST?
+    R: Resumidamente, é uma API que executa as operações básicas com verbos HTTP, no caso, GET, POST, PUT e DELETE.
+
+3° O que significa API REST Full?
+    R: Resumidamente, é uma API que executa as operações básicas com verbos HTTP e também os demais verbos.
+
+4° Quais são os verbos básicos do HTTP (Usados em CRUD)?
+    R: GET, POST, PUT e DELETE.
+
+5° Preciso fazer um cadastro de Cliente na url: http://localhost:3000/clientes qual verbo devo usar?
+    R: POST.
+
+6° Preciso fazer um atualização no nome do Cliente na url: http://localhost:3000/clientes qual verbo devo usar?
+    R: PUT.
+
+7° Tentei acessar o sistema mas minha senha está errada, qual Status Code devo receber?
+    R: 401 - Unauthorized.
+
+8° Tentei acessar um recurso e não foi encontrado, qual e Status Code deve receber?
+    R: 404 - Not Found.
+
+9° Cadastrei um cliente na API, qual status devo receber?
+    R: 201 - Created.
+
+10°  O que é um Request?
+    R: É uma requisição para algum lugar, geralmente uma API.
+
+11° O que  é um Response?
+    R: É uma resposta de algum lugar, geralmente de uma API. É usada para as respostas do protocolo HTTP.
+
+12 Se eu fosse fazer uma deleção de cliente na API, qual seria o verbo que eu deveria usar?
+    R: DELETE.
+
+13° Mandei cadastrar algo sem informar alguns campos obrigatórios, qual status Code eu vou receber?
+    R: 400 - Bad Request.
+
+14° Tenho uma api rodando na minha maquina na porta 7000, com isso preciso fazer um crud para clientes. Sabendo que a rota para clientes poderia ser “/clientes”, Crie abaixo exemplo de: como poderiam ser esse crud.
+Obs:  somente a URL e o verbo, não precisa escrever o json.
+    R: 
+
+    Verbo GET
+    URL: http://localhost:7000/clientes
+    Body: não tem body
+
+    Verbo POST
+    URL: http://localhost:7000/clientes
+    Body JSON
+
+    Verbo PUT
+    URL: http://localhost:7000/clientes/:ID
+    Body JSON
+
+    Verbo DELETE
+    URL: http://localhost:7000/clientes/:ID
+    Body: não tem body
